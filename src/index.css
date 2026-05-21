@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Mono", monospace;
+  --font-mono: "Space Mono", monospace;
+  --font-anton: "Anton", sans-serif;
+  
+  --color-neon-pink: #FF007F;
+  --color-neon-cyan: #00FFFF;
+  --color-neon-yellow: #FFFF00;
+}
+
+@layer utilities {
+  .neon-border-pink {
+    border: 4px solid #FF007F;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.2);
+  }
+  .neon-border-cyan {
+    border: 4px solid #00FFFF;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  }
+}
+
+/* Custom marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}

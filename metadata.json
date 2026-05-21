@@ -1,0 +1,6 @@
+{
+  "name": "Retro Pop Dig Dug Game",
+  "description": "A chaotic, energy-filled 2-D web game inspired by Dig Dug with a glittering Miley pop-culture vibe. Dig tunnels, inflate paparazzi and foam fingers with bubblegum, dodge heavy falling disco balls, and vibe to retro synth beats!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
